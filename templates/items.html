@@ -1,0 +1,18 @@
+<div  class="border-bottom row" style ="margin-bottom =16px">
+ <div class="col-11">
+   <h4>
+    {{item['name']}}
+  </h4>
+    {% if 'price' in item %}
+  <div>
+  <i>Price :</i>{{item['price']}}
+  </div>
+  {% else %}
+ <div>  Sold Out
+ </div> 
+  {% endif %}
+</div>
+  <div class="col-1">
+       <button type="button" class="btn btn-primary">Buy Now</button>
+  </div>
+</div>
